@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Publications — Sun Lab · Laboratory of Immunotherapy, USTC</title>
+<meta name="description" content="Complete list of publications from the Sun Lab (Laboratory of Immunotherapy, USTC), led by Prof. Cheng Sun — spatial immunology and NK-cell immunotherapy.">
+<link rel="canonical" href="https://chengsun.bio/publications.html">
+<meta name="theme-color" content="#091318">
+<meta name="robots" content="index, follow">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='8' fill='%23091318'/%3E%3Ccircle cx='20' cy='20' r='15' fill='none' stroke='%230E7C88' stroke-width='1.4'/%3E%3Ccircle cx='20' cy='20' r='3.2' fill='%2341D3DF'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Spectral:ital,wght@0,300;0,400;0,500;0,600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#091318;--ink-2:#0E2027;--paper:#F1F3F0;--paper-2:#E8ECE7;--card:#FFFFFF;
+    --teal:#0E7C88;--teal-deep:#0A5A64;--teal-bright:#41D3DF;--coral:#E8685C;
+    --slate:#566970;--slate-2:#83959B;--line:rgba(9,19,24,.11);--line-soft:rgba(9,19,24,.06);
+    --display:"Fraunces",Georgia,serif;--body:"Spectral",Georgia,serif;--mono:"IBM Plex Mono",ui-monospace,monospace;--maxw:1080px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--body);color:var(--ink);background:var(--paper);line-height:1.62;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden}
+  a{color:inherit;text-decoration:none}
+  ::selection{background:var(--teal-bright);color:var(--ink)}
+  :focus-visible{outline:2px solid var(--teal-bright);outline-offset:3px;border-radius:2px}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 36px}
+  @media(max-width:640px){.wrap{padding:0 20px}}
+  h1,h2,h3{font-family:var(--display);font-weight:500;line-height:1.08;letter-spacing:-.018em;font-optical-sizing:auto}
+  .eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--teal);font-weight:500;display:inline-flex;align-items:center;gap:10px}
+  .eyebrow::before{content:"";width:22px;height:1px;background:var(--teal);opacity:.6}
+
+  /* header */
+  header{position:sticky;top:0;z-index:60;background:var(--ink);border-bottom:1px solid rgba(255,255,255,.10)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:66px}
+  .brand{display:flex;align-items:center;gap:12px;color:#EAF0F1}
+  .brand .mark{width:30px;height:30px}
+  .brand .name{font-family:var(--mono);font-weight:500;font-size:13px;letter-spacing:.02em;line-height:1.2;text-transform:uppercase}
+  .brand .name small{display:block;font-size:10px;letter-spacing:.14em;color:var(--slate-2);font-weight:400}
+  .navlinks{display:flex;gap:26px;align-items:center}
+  .navlinks a{font-family:var(--mono);font-size:12px;letter-spacing:.03em;color:rgba(255,255,255,.72);transition:color .25s}
+  .navlinks a:hover{color:var(--teal-bright)}
+  .navlinks .home{color:#EAF0F1;border:1px solid rgba(255,255,255,.28);padding:8px 14px;border-radius:999px}
+  .navlinks .home:hover{background:var(--teal-bright);border-color:var(--teal-bright);color:var(--ink)}
+  @media(max-width:720px){.navlinks a:not(.home){display:none}}
+
+  /* page head */
+  .head{padding:76px 0 30px}
+  .head h1{font-size:clamp(40px,7vw,74px);margin:16px 0 14px}
+  .head h1 em{font-style:italic;color:var(--teal-deep)}
+  .lead{font-size:18px;color:var(--slate);max-width:640px}
+  .lead b{color:var(--ink);font-weight:600}
+
+  /* list */
+  .list{padding:12px 0 40px}
+  .yr-mark{position:sticky;top:66px;background:var(--paper);padding:26px 0 10px;z-index:5}
+  .yr-mark span{font-family:var(--mono);font-size:13px;font-weight:600;letter-spacing:.16em;color:var(--teal);border-bottom:1px solid var(--line);padding-bottom:8px;display:block}
+  .pub{display:grid;grid-template-columns:220px 1fr;gap:26px;padding:22px 0;border-bottom:1px solid var(--line-soft)}
+  .pmeta{display:flex;flex-direction:column;gap:7px;align-items:flex-start}
+  .pmeta .jr{font-family:var(--mono);font-size:12px;font-weight:500;letter-spacing:.02em;color:var(--ink);line-height:1.35}
+  .pmeta .dt{font-family:var(--mono);font-size:11px;color:var(--slate-2);letter-spacing:.02em}
+  .bd{font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;padding:3px 8px;border-radius:4px;border:1px solid var(--line)}
+  .bd-cover{color:var(--coral);border-color:var(--coral)}
+  .bd-rev{color:var(--slate);border-color:var(--line)}
+  .pbody h3{font-size:20px;line-height:1.28;margin-bottom:8px}
+  .pbody .au{font-size:14px;color:var(--slate);line-height:1.55;margin-bottom:8px}
+  .pbody .au b{color:var(--ink);font-weight:600}
+  .doi{font-family:var(--mono);font-size:12px;color:var(--teal);letter-spacing:.02em}
+  .doi:hover{color:var(--teal-deep);text-decoration:underline}
+  @media(max-width:640px){
+    .pub{grid-template-columns:1fr;gap:10px;padding:18px 0}
+    .pmeta{flex-direction:row;flex-wrap:wrap;align-items:center;gap:10px}
+    .yr-mark{top:66px}
+  }
+
+  /* footer */
+  footer{background:var(--ink);color:#B9C7CA;margin-top:20px;padding:46px 0 30px}
+  footer .fnote{font-size:14px;max-width:560px;color:#93A3A8;margin-bottom:22px}
+  footer .fbottom{border-top:1px solid rgba(255,255,255,.10);padding-top:18px;display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;font-family:var(--mono);font-size:11px;letter-spacing:.03em;color:var(--slate-2)}
+  footer a.back{font-family:var(--mono);font-size:12px;color:var(--teal-bright)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="index.html" aria-label="Sun Lab — home">
+      <svg class="mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+        <circle cx="20" cy="20" r="18.5" stroke="currentColor" stroke-width="1.2" opacity=".5"/>
+        <circle cx="20" cy="20" r="3.4" fill="#41D3DF"/>
+        <circle cx="9" cy="14" r="2.1" fill="currentColor"/><circle cx="30" cy="11" r="1.8" fill="currentColor"/>
+        <circle cx="31" cy="28" r="2.4" fill="#E8685C"/><circle cx="11" cy="29" r="1.7" fill="currentColor"/>
+        <path d="M20 20 L9 14 M20 20 L30 11 M20 20 L31 28 M20 20 L11 29" stroke="currentColor" stroke-width=".8" opacity=".4"/>
+      </svg>
+      <span class="name">Sun Lab<small>USTC · Immunotherapy</small></span>
+    </a>
+    <nav class="navlinks">
+      <a href="index.html#research">Research</a>
+      <a href="index.html#platform">TIMES</a>
+      <a href="index.html#people">People</a>
+      <a class="home" href="index.html">← Back to site</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="head">
+    <span class="eyebrow">Publications</span>
+    <h1>The complete <em>record.</em></h1>
+    <p class="lead">The full body of work from the laboratory — <b>41 peer-reviewed publications</b> spanning spatial immunology, NK-cell biology, and cancer immunotherapy. Corresponding-author names are shown in bold.</p>
+  </section>
+
+  <section class="list">
+    <div class="yr-mark"><span>2026</span></div>
+<article class="pub"><div class="pmeta"><span class="jr">Nature Immunology</span><span class="bd bd-cover">Cover</span></div><div class="pbody"><h3>Targeting CLEC12B Unleashes NK Cells for Enhanced Cancer Immunotherapy</h3><p class="au">Peng Sun, Xiaoyu Xu, Bian Hu, Huidi Chen, Hanyang Liu, Qingping Tao, Asad Khan, Sohail Khan, Björn Nashan, <b>Cheng Sun</b></p></div></article>
+<article class="pub"><div class="pmeta"><span class="jr">Nature Communications</span></div><div class="pbody"><h3>SAMSN1 Restrains NK Cell-Mediated Anti-Tumor Immunity in Hepatocellular Carcinoma</h3><p class="au">Ruifeng Wang, Huidi Chen, Bian Hu, Hanyan Liu, Qiang Li, Guojing Yao, Fuling Li, Peng Sun, Tianli Dai, Jiabei Wang, Björn Nashan, <b>Cheng Sun</b></p></div></article>
+<article class="pub"><div class="pmeta"><span class="jr">Cell Reports</span></div><div class="pbody"><h3>Metabolic Reinvigoration of NK Cells by IL-21 Enhances Immunotherapy Against MHC-I-Deficient Solid Tumors</h3><p class="au">Yi Wang, Chao Huang, Guoxin Cai, Massimo Andreatta, Armand Kurum, Yang Zhao, Bing Feng, Min Gao, Santiago J. Carmona, Zhan Zhou, <b>Cheng Sun</b>, Yugang Guo, Li Tang</p></div></article>
+<div class="yr-mark"><span>2025</span></div>
+<article class="pub"><div class="pmeta"><span class="jr">Nature</span><span class="dt">640</span><span class="bd bd-cover">Cover</span></div><div class="pbody"><h3>Spatial Immune Scoring System Predicts Hepatocellular Carcinoma Recurrence</h3><p class="au">Gengjie Jia, Peiqi He, Tianli Dai, Denise Goh, Jiabei Wang, Felicia Wee, Fuling Li, Shuxia Hao, Yao Liu, Qingping Tao, Wei Wang, Ahitsham Umar, Björn Nashan, Yongchang Zhang, Chen Ding, Joe Yeong, Lianxin Liu, <b>Cheng Sun</b></p></div></article>
+<article class="pub"><div class="pmeta"><span class="jr">Journal for ImmunoTherapy of Cancer</span><span class="dt">13(5)</span><span class="bd bd-rev">Review</span></div><div class="pbody"><h3>Asia&#x27;s Emergence in Cancer Immunotherapy: Challenges and Opportunities</h3><p class="au">Yan Li, Joe Yeong, Bernard A. Fox, <b>Cheng Sun</b></p></div></article>
+<div class="yr-mark"><span>2024</span></div>
+<article class="pub"><div class="pmeta"><span class="jr">Gastroenterology</span><span class="dt">166(3):450-465.e33</span></div><div class="pbody"><h3>Proteomic Characterization Identifies Clinically Relevant Subgroups of Gastrointestinal Stromal Tumors</h3><p class="au">Mingjun Sun, Yexin Tong, Wei Yuan, Yunzhi Wang, et al., <b>Cheng Sun</b>, Kuntang Shen, Fuchu He, Yingyong Hou, Chen Ding</p></div></article>
+<article class="pub"><div class="pmeta"><span class="jr">International Journal of Biological Macromolecules</span><span class="dt">281(Pt 4):136635</span></div><div class="pbody"><h3>A Bispecific Antibody Targeting the Ig Domains of Siglec-E Displays Enhanced Antitumor Effects</h3><a class="doi" href="https://doi.org/10.1016/j.ijbiomac.2024.136635" target="_blank" rel="noopener">View paper →</a></div></article>
+<div class="yr-mark"><span>2023</span></div>
+<article class="pub"><div class="pmeta"><span class="jr">Nature Communications</span><span class="dt">14(1):1254</span></div><div class="pbody"><h3>Systematic Characterization of Chromodomain Proteins Reveals an H3K9me1/2 Reader Regulating Aging in C. elegans</h3><p class="au">Xinhao Hou, Mingjing Xu, Chengming Zhu, Jianing Gao, Meili Li, Xiangyang Chen, <b>Cheng Sun</b>, Björn Nashan, Jianye Zang, Ying Zhou, Shouhong Guang, Xuezhu Feng</p></div></article>
+<article class="pub"><div class="pmeta"><span class="jr">Hepatology</span><span class="dt">78(1):72-87</span></div><div class="pbody"><h3>Regulatory Mucosa-Associated Invariant T Cells Controlled by β1 Adrenergic Receptor Signaling Contribute to Hepatocellular Carcinoma Progression</h3><p class="au">Sicheng Fu, Muziying Liu, Chenwen Zhu, Huimin Zhang, Changfeng Zhao, Yaping Xie, et al., <b>Cheng Sun</b>, Zhigang Tian, Hua Wang, Li Bai</p></div></article>
+<article class="pub"><div class="pmeta"><span class="jr">Hepatobiliary Surgery and Nutrition</span><span class="dt">12(6):835-853</span></div><div class="pbody"><h3>Influence of Immunosuppressive Drugs on Natural Killer Cells in Therapeutic Drug Exposure in Liver Transplantation</h3><p class="au">Rongrong Qin, Jiwei Qin, Xuefeng Li, Zhijun Xu, Peiqi He, Xiaodong Yuan, <b>Cheng Sun</b>, Björn Nashan</p></div></article>
+<div class="yr-mark"><span>2022</span></div>
+<article class="pub"><div class="pmeta"><span class="jr">Cancer Biology &amp; Medicine</span><span class="dt">9(10):1-18</span></div><div class="pbody"><h3>Panoramic Comparison Between NK Cells in Healthy and Cancerous Liver Through Single-Cell RNA Sequencing</h3><p class="au">Huan Liu, Ronghua Zhao, Rongrong Qin, Haoyu Sun, Qiang Huang, Lianxin Liu, Zhigang Tian, Björn Nashan, <b>Cheng Sun</b>, Rui Sun</p></div></article>
+<article class="pub"><div class="pmeta"><span class="jr">Nature Communications</span><span class="dt">13(1)</span></div><div class="pbody"><h3>Postmortem High-Dimensional Immune Profiling of Severe COVID-19 Patients Reveals Distinct Patterns of Immunosuppression and Immunoactivation</h3><p class="au">Haibo Wu, Peiqi He, Yong Ren, Shiqi Xiao, Wei Wang, Shuyang Zhang, Jiwei Qin, Björn Nashan, <b>Cheng Sun</b></p></div></article>
+<article class="pub"><div class="pmeta"><span class="jr">Frontiers in Immunology</span><span class="dt">13:996721</span><span class="bd bd-rev">Review</span></div><div class="pbody"><h3>A Review of Spatial Profiling Technologies for Characterizing the Tumor Microenvironment in Immuno-Oncology</h3><p class="au">Bian Hu, Muhammad Sajid, Rong Lv, Lianxin Liu, <b>Cheng Sun</b></p></div></article>
+<article class="pub"><div class="pmeta"><span class="jr">Frontiers in Immunology</span><span class="dt">13:887186</span><span class="bd bd-rev">Review</span></div><div class="pbody"><h3>The Dynamic Role of NK Cells in Liver Cancers: Role in HCC and HBV-Associated HCC and Its Therapeutic Implications</h3><p class="au">Muhammad Sajid, Lianxin Liu, <b>Cheng Sun</b></p></div></article>
+<article class="pub"><div class="pmeta"><span class="jr">Journal of Genetics and Genomics</span><span class="dt">49(10):952-964</span></div><div class="pbody"><h3>The SNAPc Complex Mediates Starvation-Induced Trans-Splicing in Caenorhabditis elegans</h3><p class="au">Xinhao Hou, Chengming Zhu, Mingjing Xu, Xiangyang Chen, <b>Cheng Sun</b>, Björn Nashan, Shouhong Guang, Xuezhu Feng</p></div></article>
+<div class="yr-mark"><span>2021</span></div>
+<article class="pub"><div class="pmeta"><span class="jr">European Journal of Immunology</span><span class="dt">51(9):2188-2205</span><span class="bd bd-rev">Review</span></div><div class="pbody"><h3>Innate Lymphoid Cells and Cancer: Role in Tumor Progression and Inhibition</h3><p class="au">Haoyu Sun, Jiabei Xu, Qiang Huang, Mei Huang, Kang Li, Kun Qu, Hua Wen, Rui Lin, Xiaodong Yuan, Faqiang Rasul, Björn Nashan, <b>Cheng Sun</b></p></div></article>
+<article class="pub"><div class="pmeta"><span class="jr">Journal of Hematology &amp; Oncology</span><span class="dt">14(1):100</span></div><div class="pbody"><h3>Blockade of Checkpoint Receptor PVRIG Unleashes Anti-Tumor Immunity of NK Cells in Murine and Human Solid Tumors</h3></div></article>
+<article class="pub"><div class="pmeta"><span class="jr">Infection and Immunity</span><span class="dt">89(12):e0029721</span></div><div class="pbody"><h3>Single-Cell RNA Sequencing Reveals the Heterogeneity of Infiltrating Immune Cell Profiles in the Hepatic Cystic Echinococcosis Microenvironment</h3></div></article>
+<div class="yr-mark"><span>2020</span></div>
+<article class="pub"><div class="pmeta"><span class="jr">Immunology Letters</span><span class="dt">223:33-43</span></div><div class="pbody"><h3>Establishment and Preclinical Therapy of a Patient-Derived Hepatocellular Carcinoma Xenograft Model</h3><p class="au">Yuwei Wu, Jinyu Wang, Xiaodong Zheng, Yongyan Chen, Mei Huang, Qiang Huang, Weihua Xiao, Haiming Wei, Zhigang Tian, Rui Sun, <b>Cheng Sun</b></p></div></article>
+<article class="pub"><div class="pmeta"><span class="jr">Journal of Clinical Investigation</span><span class="dt">130(9):4679-4693</span></div><div class="pbody"><h3>Myeloid Signature Reveals Immune Contexture and Predicts the Prognosis of Hepatocellular Carcinoma</h3></div></article>
+<div class="yr-mark"><span>2019</span></div>
+<article class="pub"><div class="pmeta"><span class="jr">Hepatology</span><span class="dt">70(1):168-183</span></div><div class="pbody"><h3>Human CD96 Correlates to NK Cell Exhaustion and Predicts the Prognosis of Human Hepatocellular Carcinoma</h3><p class="au">Haoyu Sun, Qiang Huang, Mei Huang, Hua Wen, Rui Lin, Minghui Zheng, Kun Qu, Kang Li, Haiming Wei, Weihua Xiao, Rui Sun, Zhigang Tian, <b>Cheng Sun</b></p></div></article>
+<article class="pub"><div class="pmeta"><span class="jr">Cancer Immunology Research</span><span class="dt">7(9):1535-1546</span></div><div class="pbody"><h3>Accumulation of Tumor-Infiltrating CD49a+ NK Cells Correlates with Poor Prognosis for Human Hepatocellular Carcinoma</h3><p class="au">Haoyu Sun, Lianxin Liu, Qiang Huang, Huan Liu, Mei Huang, Jiabei Wang, Hua Wen, Rui Lin, Kun Qu, Kang Li, Haiming Wei, Weihua Xiao, Rui Sun, Zhigang Tian, <b>Cheng Sun</b></p></div></article>
+<article class="pub"><div class="pmeta"><span class="jr">Frontiers in Immunology</span><span class="dt">10:2354</span><span class="bd bd-rev">Review</span></div><div class="pbody"><h3>The Rise of NK Cell Checkpoints as Promising Therapeutic Targets in Cancer Immunotherapy</h3><p class="au">Haoyu Sun, <b>Cheng Sun</b></p></div></article>
+<article class="pub"><div class="pmeta"><span class="jr">Frontiers in Immunology</span><span class="dt">10:927</span></div><div class="pbody"><h3>CD4+ T Cells Play a Critical Role in Microbiota-Maintained Anti-HBV Immunity in a Mouse Model</h3><p class="au">Tingxin Wu, Fuling Li, Yongyan Chen, Haiming Wei, Zhigang Tian, <b>Cheng Sun</b>, Rui Sun</p></div></article>
+<article class="pub"><div class="pmeta"><span class="jr">Nature Communications</span><span class="dt">10(1):221</span></div><div class="pbody"><h3>Breakdown of Adaptive Immunotolerance Induces Hepatocellular Carcinoma in HBsAg-tg Mice</h3><p class="au">Liang Zong, Hui Peng, <b>Cheng Sun</b>, Fuling Li, Minghui Zheng, Yongyan Chen, Haiming Wei, Rui Sun, Zhigang Tian</p></div></article>
+<article class="pub"><div class="pmeta"><span class="jr">Cellular &amp; Molecular Immunology</span><span class="dt">16(3):205-215</span><span class="bd bd-rev">Review</span></div><div class="pbody"><h3>Tissue-Resident Lymphocytes: From Adaptive to Innate Immunity</h3><p class="au">Haoyu Sun, <b>Cheng Sun</b>, Weihua Xiao, Rui Sun</p></div></article>
+<article class="pub"><div class="pmeta"><span class="jr">Hepatology</span></div><div class="pbody"><h3>Immune Exhaustion of T Cells in Alveolar Echinococcosis Patients and Its Reversal by Blocking Checkpoint Receptor TIGIT in a Murine Model</h3><p class="au">Chuanshan Zhang, Rui Lin, Zhide Li, Shanshan Yang, Xiaojuan Bi, et al., <b>Cheng Sun</b>, Dominique A. Vuitton, Zhigang Tian, Hao Wen</p></div></article>
+<article class="pub"><div class="pmeta"><span class="jr">Hepatology</span><span class="dt">70(5):1804-1815</span></div><div class="pbody"><h3>CD8+ T Cells Promote Maturation of Liver-Resident NK Cells Through the CD70-CD27 Axis</h3><p class="au">Li Bai, Hui Peng, Xiaodong Hao, Lu Tang, <b>Cheng Sun</b>, Minghui Zheng, Fuming Liu, Zhexiong Lian, Haiming Wei, Rui Sun, Zhigang Tian</p></div></article>
+<div class="yr-mark"><span>2018</span></div>
+<article class="pub"><div class="pmeta"><span class="jr">Cancer Research</span><span class="dt">78(18)</span></div><div class="pbody"><h3>Reduced CD160 Expression Contributes to Impaired NK-Cell Function and Poor Clinical Outcomes in Patients with HCC</h3><p class="au">Minghui Zheng, Haiming Wei, Weihua Xiao, Rui Sun, Zhigang Tian, <b>Cheng Sun</b></p></div></article>
+<article class="pub"><div class="pmeta"><span class="jr">Nature Communications</span><span class="dt">9(1):1241</span></div><div class="pbody"><h3>Oncofetal Gene SALL4 Reactivation by Hepatitis B Virus Counteracts miR-200c in PD-L1-Induced T Cell Exhaustion</h3><p class="au"><b>Cheng Sun</b>, Ping Lan, Qiuju Han, Mei Huang, Zhen Zhang, Guangyu Xu, Jie Song, Jiabei Wang, Haiming Wei, Jian Zhang, Rui Sun, Cheng Zhang, Zhigang Tian</p></div></article>
+<div class="yr-mark"><span>2017</span></div>
+<article class="pub"><div class="pmeta"><span class="jr">OncoImmunology</span><span class="dt">6(1):e1264562</span></div><div class="pbody"><h3>High NKG2A Expression Contributes to NK Cell Exhaustion and Predicts a Poor Prognosis of Patients with Liver Cancer</h3><p class="au"><b>Cheng Sun</b>, Jiabei Xu, Qiang Huang, Mei Huang, Hua Wen, Cheng Zhang, Jiabei Wang, Jie Song, Minghui Zheng, Haoyu Sun, Haiming Wei, Weihua Xiao, Rui Sun, Zhigang Tian</p></div></article>
+<article class="pub"><div class="pmeta"><span class="jr">Journal of Gastroenterology and Hepatology</span><span class="dt">32(5):1107-1114</span></div><div class="pbody"><h3>Association of Decreased Expression of the Macrophage Scavenger Receptor MARCO with Tumor Progression and Poor Prognosis in Human Hepatocellular Carcinoma</h3><p class="au">Haoyu Sun, Jie Song, Chuanhui Weng, Jiabei Xu, Mei Huang, Qiang Huang, Rui Sun, Weihua Xiao, <b>Cheng Sun</b></p></div></article>
+<article class="pub"><div class="pmeta"><span class="jr">Scientific Reports</span><span class="dt">7(1):2567</span></div><div class="pbody"><h3>Chronic Alcohol Consumption Promotes Diethylnitrosamine-Induced Hepatocarcinogenesis via Immune Disturbances</h3><p class="au">Guowei Yan, Xiang Wang, <b>Cheng Sun</b>, Xiaodong Zheng, Haiming Wei, Zhigang Tian, Rui Sun</p></div></article>
+<article class="pub"><div class="pmeta"><span class="jr">Scientific Reports</span><span class="dt">7(1):11153</span></div><div class="pbody"><h3>T-Cell Tolerance and Exhaustion in the Clearance of Echinococcus multilocularis: Role of Inoculum Size in a Quantitative Hepatic Experimental Model</h3><p class="au">Chuanshan Zhang, Ying Shao, Shanshan Yang, Xiaojuan Bi, Liang Li, Hui Wang, Ning Yang, Zhide Li, <b>Cheng Sun</b>, Dominique A. Vuitton, Rui Lin, Hao Wen</p></div></article>
+<div class="yr-mark"><span>2016</span></div>
+<article class="pub"><div class="pmeta"><span class="jr">Immunology Letters</span><span class="dt">178:105-113</span></div><div class="pbody"><h3>CD200R, a Co-inhibitory Receptor on Immune Cells, Predicts the Prognosis of Human Hepatocellular Carcinoma</h3><p class="au">Haoyu Sun, Jiabei Xu, Mei Huang, Qiang Huang, Rui Sun, Weihua Xiao, <b>Cheng Sun</b></p></div></article>
+<div class="yr-mark"><span>2015</span></div>
+<article class="pub"><div class="pmeta"><span class="jr">Cellular &amp; Molecular Immunology</span><span class="dt">12(3):292-302</span><span class="bd bd-rev">Review</span></div><div class="pbody"><h3>NK Cell Receptor Imbalance and NK Cell Dysfunction in HBV Infection and Hepatocellular Carcinoma</h3><p class="au"><b>Cheng Sun</b>, Haoyu Sun, Cheng Zhang, Zhigang Tian</p></div></article>
+<article class="pub"><div class="pmeta"><span class="jr">Oncotarget</span><span class="dt">6(34):35602-35615</span></div><div class="pbody"><h3>The Predictive Value of Centre Tumour CD8+ T Cells in Patients with Hepatocellular Carcinoma: Comparison with Immunoscore</h3><p class="au"><b>Cheng Sun</b>, Jiabei Xu, Jie Song, Chang Liu, Jiabei Wang, Chuanhui Weng, Haoyu Sun, Haiming Wei, Weihua Xiao, Rui Sun, Zhigang Tian</p></div></article>
+<article class="pub"><div class="pmeta"><span class="jr">Acta Pharmacologica Sinica</span><span class="dt">36(10):1191-1199</span><span class="bd bd-rev">Review</span></div><div class="pbody"><h3>Natural Killer Cell Dysfunction in Hepatocellular Carcinoma and NK Cell-Based Immunotherapy</h3><p class="au"><b>Cheng Sun</b>, Haoyu Sun, Weihua Xiao, Cheng Zhang, Zhigang Tian</p></div></article>
+<div class="yr-mark"><span>2014</span></div>
+<article class="pub"><div class="pmeta"><span class="jr">Cytokine</span><span class="dt">65(1):33-41</span></div><div class="pbody"><h3>Expression Regulation of Co-inhibitory Molecules on Human Natural Killer Cells in Response to Cytokine Stimulations</h3><p class="au">Haoyu Sun, <b>Cheng Sun</b>, Weihua Xiao</p></div></article>
+<div class="yr-mark"><span>2013</span></div>
+<article class="pub"><div class="pmeta"><span class="jr">Cellular &amp; Molecular Immunology</span><span class="dt">10(3):202-212</span><span class="bd bd-rev">Review</span></div><div class="pbody"><h3>NK Cells in Immunotolerant Organs</h3><p class="au">Haoyu Sun, <b>Cheng Sun</b>, Zhigang Tian, Weihua Xiao</p></div></article>
+<div class="yr-mark"><span>2012</span></div>
+<article class="pub"><div class="pmeta"><span class="jr">PLoS Pathogens</span><span class="dt">8(3):e1002594</span></div><div class="pbody"><h3>TGF-β1 Down-Regulation of NKG2D/DAP10 and 2B4/SAP Expression on Human NK Cells Contributes to HBV Persistence</h3><p class="au"><b>Cheng Sun</b>, Binqing Fu, Yongyan Gao, Xiaohu Liao, Rui Sun, Zhigang Tian, Haiming Wei</p></div></article>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="fnote">Mapping the spatial logic of the human anti-cancer immune response, and turning it into next-generation immunotherapy.</p>
+    <div class="fbottom">
+      <span>© 2026 Laboratory of Immunotherapy, USTC. All rights reserved.</span>
+      <a class="back" href="index.html">chengsun.bio →</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
