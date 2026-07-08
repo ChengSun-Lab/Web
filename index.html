@@ -428,6 +428,21 @@
     .pi .honors{grid-template-columns:1fr}
     .ph-row{grid-template-columns:1fr}
   }
+
+  /* ---- journal cover thumbnails + lightbox (added) ---- */
+  .cover-thumb{margin-top:14px;width:132px;border-radius:3px;border:1px solid var(--line);box-shadow:0 8px 22px rgba(9,19,24,.16);cursor:zoom-in;transition:transform .3s ease,box-shadow .3s ease}
+  .cover-thumb:hover{transform:translateY(-3px);box-shadow:0 14px 32px rgba(9,19,24,.24)}
+  .cover-mini{margin-top:34px;display:flex;align-items:flex-end;gap:16px}
+  .cover-mini img{width:118px;border-radius:3px;border:1px solid rgba(255,255,255,.14);box-shadow:0 10px 30px rgba(0,0,0,.4);cursor:zoom-in;transition:transform .3s ease}
+  .cover-mini img:hover{transform:translateY(-3px)}
+  .cover-mini figcaption{font-family:var(--mono);font-size:11px;letter-spacing:.06em;color:var(--slate-2);line-height:1.6;text-transform:uppercase}
+  .cover-mini figcaption em{font-style:italic;text-transform:none;color:#EAF0F1;font-size:12px}
+  .lightbox{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(6,12,15,.88);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);padding:5vh 5vw;cursor:zoom-out;opacity:0;transition:opacity .25s ease}
+  .lightbox.open{display:flex;opacity:1}
+  .lightbox img{max-width:100%;max-height:90vh;border-radius:4px;box-shadow:0 30px 90px rgba(0,0,0,.6);cursor:default}
+  .lb-close{position:absolute;top:22px;right:26px;width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,.4);background:rgba(255,255,255,.12);color:#fff;font-size:24px;line-height:1;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:background .2s ease}
+  .lb-close:hover{background:rgba(255,255,255,.24)}
+  @media(max-width:640px){.cover-thumb{width:108px}.cover-mini img{width:92px}}
 </style>
 </head>
 <body>
@@ -540,6 +555,10 @@
       <div class="hero-cta" style="margin-top:36px">
         <a class="btn btn-primary" href="#publications">Read the paper <span class="arw">→</span></a>
       </div>
+      <figure class="cover-mini">
+        <img class="cover-trigger" src="nature-2025-cover-times.jpg" data-full="nature-2025-cover-times.jpg" alt="Nature 2025 cover featuring the TIMES spatial immune-scoring platform" loading="lazy">
+        <figcaption>On the cover<br><em>Nature</em> · 2025</figcaption>
+      </figure>
     </div>
     <div class="pf-visual reveal">
       <canvas id="times-map" aria-hidden="true"></canvas>
@@ -639,6 +658,7 @@
           <div class="jrnl">Nature Immunology</div>
           <div class="yr">2026</div>
           <span class="badge">Cover</span>
+          <img class="cover-thumb cover-trigger" src="nature-immunology-2026-cover.jpg" data-full="nature-immunology-2026-cover.jpg" alt="Nature Immunology 2026 cover — Targeting CLEC12B unleashes NK cells for enhanced cancer immunotherapy" loading="lazy">
         </div>
         <div>
           <h3>Identification of CLEC12B as an NK-cell immune checkpoint and a CLEC12B-targeting nanobody for cancer immunotherapy.</h3>
@@ -1009,7 +1029,25 @@
     var rt;window.addEventListener('resize',function(){clearTimeout(rt);rt=setTimeout(size,180);});
   }
   var tm=document.getElementById('times-map'); if(tm) TimesMap(tm);
-})();
+
+  /* ---- cover lightbox (added) ---- */
+  (function(){
+    var lb=document.getElementById('lightbox'), lbImg=document.getElementById('lbImg'), lbClose=document.getElementById('lbClose');
+    if(!lb) return;
+    function openLb(src,alt){ lbImg.src=src; lbImg.alt=alt||''; lb.classList.add('open'); lb.setAttribute('aria-hidden','false'); document.body.style.overflow='hidden'; }
+    function closeLb(){ lb.classList.remove('open'); lb.setAttribute('aria-hidden','true'); document.body.style.overflow=''; setTimeout(function(){lbImg.src='';},260); }
+    document.querySelectorAll('.cover-trigger').forEach(function(el){
+      el.addEventListener('click',function(){ openLb(el.getAttribute('data-full')||el.getAttribute('src'), el.getAttribute('alt')); });
+    });
+    lb.addEventListener('click',function(e){ if(e.target===lb) closeLb(); });
+    if(lbClose) lbClose.addEventListener('click',closeLb);
+    document.addEventListener('keydown',function(e){ if(e.key==='Escape' && lb.classList.contains('open')) closeLb(); });
+  })();
 </script>
+
+<div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Enlarged cover image">
+  <button class="lb-close" id="lbClose" aria-label="Close">&times;</button>
+  <img id="lbImg" src="" alt="">
+</div>
 </body>
 </html>
