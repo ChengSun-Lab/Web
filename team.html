@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Team — Sun Lab · Laboratory of Immunotherapy, USTC</title>
+<meta name="description" content="The people of the Sun Lab (Laboratory of Immunotherapy, USTC) — postdoctoral scholars, PhD and MSc students advancing spatial immunology and NK-cell immunotherapy.">
+<link rel="canonical" href="https://chengsun.bio/team.html">
+<meta name="theme-color" content="#091318">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='8' fill='%23091318'/%3E%3Ccircle cx='20' cy='20' r='15' fill='none' stroke='%230E7C88' stroke-width='1.4'/%3E%3Ccircle cx='20' cy='20' r='3.2' fill='%2341D3DF'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Spectral:ital,wght@0,300;0,400;0,500;0,600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.47.0/tabler-icons.min.css" rel="stylesheet">
+<style>
+  :root{--ink:#091318;--paper:#F1F3F0;--card:#FFFFFF;--teal:#0E7C88;--teal-deep:#0A5A64;--teal-bright:#41D3DF;--coral:#E8685C;--slate:#566970;--slate-2:#83959B;--line:rgba(9,19,24,.11);--line-soft:rgba(9,19,24,.06);--display:"Fraunces",Georgia,serif;--body:"Spectral",Georgia,serif;--mono:"IBM Plex Mono",monospace;--maxw:1120px}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--body);color:var(--ink);background:var(--paper);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  a{color:inherit;text-decoration:none}
+  ::selection{background:var(--teal-bright);color:var(--ink)}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 36px}
+  @media(max-width:640px){.wrap{padding:0 20px}}
+  h1,h3{font-family:var(--display);font-weight:500;line-height:1.1;letter-spacing:-.018em}
+  .eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--teal);font-weight:500;display:inline-flex;align-items:center;gap:10px}
+  .eyebrow::before{content:"";width:22px;height:1px;background:var(--teal);opacity:.6}
+  header{position:sticky;top:0;z-index:60;background:var(--ink);border-bottom:1px solid rgba(255,255,255,.10)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:66px}
+  .brand{display:flex;align-items:center;gap:12px;color:#EAF0F1}
+  .brand .name{font-family:var(--mono);font-weight:500;font-size:13px;letter-spacing:.02em;text-transform:uppercase;line-height:1.2}
+  .brand .name small{display:block;font-size:10px;letter-spacing:.14em;color:var(--slate-2);font-weight:400}
+  .navlinks{display:flex;gap:26px;align-items:center}
+  .navlinks a{font-family:var(--mono);font-size:12px;color:rgba(255,255,255,.72);transition:color .25s}
+  .navlinks a:hover{color:var(--teal-bright)}
+  .navlinks .home{color:#EAF0F1;border:1px solid rgba(255,255,255,.28);padding:8px 14px;border-radius:999px}
+  .navlinks .home:hover{background:var(--teal-bright);border-color:var(--teal-bright);color:var(--ink)}
+  @media(max-width:720px){.navlinks a:not(.home){display:none}}
+  .head{padding:76px 0 26px}
+  .head h1{font-size:clamp(40px,7vw,74px);margin:16px 0 14px}
+  .head h1 em{font-style:italic;color:var(--teal-deep)}
+  .lead{font-size:18px;color:var(--slate);max-width:640px}
+  .lead b{color:var(--ink);font-weight:600}
+  /* PI */
+  .pi{display:flex;gap:26px;align-items:center;background:var(--ink);color:#EAF0F1;border-radius:10px;padding:30px;margin:22px 0 8px}
+  .pi .av{width:104px;height:104px;border-radius:8px;flex:0 0 auto;background:linear-gradient(135deg,#0E2027,#0E7C88);display:flex;align-items:center;justify-content:center;font-family:var(--display);font-size:38px;color:#8FE3EC;border:1px solid rgba(255,255,255,.14)}
+  .pi h2{font-family:var(--display);font-weight:500;font-size:30px;letter-spacing:-.02em;margin-bottom:6px}
+  .pi .pirole{font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--teal-bright);margin-bottom:10px}
+  .pi p.pibio{color:#B9C7CA;font-size:15px;max-width:640px}
+  .pi a.pilink{font-family:var(--mono);font-size:12px;color:var(--teal-bright);display:inline-block;margin-top:10px}
+  /* groups */
+  .tgroup{padding:26px 0 6px}
+  .ghead{display:flex;align-items:baseline;gap:12px;border-bottom:1px solid var(--line);padding-bottom:10px;margin-bottom:24px}
+  .ghead .gname{font-family:var(--mono);font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--teal)}
+  .ghead .gcount{font-family:var(--mono);font-size:12px;color:var(--slate-2)}
+  .team-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:22px}
+  .tcard{background:var(--card);border:1px solid var(--line-soft);border-radius:8px;overflow:hidden;transition:transform .28s ease,box-shadow .28s ease}
+  .tcard:hover{transform:translateY(-4px);box-shadow:0 16px 36px rgba(9,19,24,.13)}
+  .tphoto{aspect-ratio:1/1;overflow:hidden;background:#dfe4e0}
+  .tphoto img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease}
+  .tcard:hover .tphoto img{transform:scale(1.04)}
+  .tinfo{padding:16px 16px 18px}
+  .tname{font-size:18px;margin-bottom:5px}
+  .trole{font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--teal);margin-bottom:9px}
+  .tfocus{font-size:13.5px;color:var(--ink);line-height:1.45;margin-bottom:6px}
+  .tprev{font-family:var(--mono);font-size:10.5px;color:var(--slate-2);line-height:1.5;margin-bottom:11px}
+  .tmail{font-family:var(--mono);font-size:11px;color:var(--teal);display:inline-flex;align-items:center;gap:6px}
+  .tmail:hover{color:var(--teal-deep);text-decoration:underline}
+  footer{background:var(--ink);color:#B9C7CA;margin-top:40px;padding:46px 0 30px}
+  footer .fnote{font-size:14px;max-width:560px;color:#93A3A8;margin-bottom:22px}
+  footer .fbottom{border-top:1px solid rgba(255,255,255,.10);padding-top:18px;display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;font-family:var(--mono);font-size:11px;color:var(--slate-2)}
+  footer a.back{font-family:var(--mono);font-size:12px;color:var(--teal-bright)}
+  @media(max-width:640px){.pi{flex-direction:column;text-align:center}.team-grid{grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:16px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="index.html" aria-label="Sun Lab — home">
+      <svg width="30" height="30" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+        <circle cx="20" cy="20" r="18.5" stroke="currentColor" stroke-width="1.2" opacity=".5"/>
+        <circle cx="20" cy="20" r="3.4" fill="#41D3DF"/><circle cx="9" cy="14" r="2.1" fill="currentColor"/>
+        <circle cx="30" cy="11" r="1.8" fill="currentColor"/><circle cx="31" cy="28" r="2.4" fill="#E8685C"/>
+        <circle cx="11" cy="29" r="1.7" fill="currentColor"/><path d="M20 20 L9 14 M20 20 L30 11 M20 20 L31 28 M20 20 L11 29" stroke="currentColor" stroke-width=".8" opacity=".4"/>
+      </svg>
+      <span class="name">Sun Lab<small>USTC · Immunotherapy</small></span>
+    </a>
+    <nav class="navlinks">
+      <a href="index.html#research">Research</a>
+      <a href="index.html#platform">TIMES</a>
+      <a href="publications.html">Publications</a>
+      <a class="home" href="index.html">← Back to site</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+  <section class="head">
+    <span class="eyebrow">People</span>
+    <h1>The <em>team.</em></h1>
+    <p class="lead">The people behind the science — <b>21 researchers</b> across postdoctoral, doctoral, and master's programs, working on spatial immunology and NK-cell immunotherapy.</p>
+  </section>
+
+  <section class="pi">
+    <div class="av">SC</div>
+    <div>
+      <h2>Prof. Cheng Sun</h2>
+      <div class="pirole">Principal Investigator</div>
+      <p class="pibio">Laboratory of Immunotherapy, National Key Laboratory of Immune Response &amp; Immunotherapy, USTC. Mapping the spatial logic of the anti-tumor immune response and translating it into next-generation immunotherapy.</p>
+      <a class="pilink" href="index.html#people">More about the PI →</a>
+    </div>
+  </section>
+
+    <section class="tgroup">
+      <div class="ghead"><span class="gname">Postdoctoral Scholars</span><span class="gcount">2</span></div>
+      <div class="team-grid">
+      <article class="tcard">
+        <div class="tphoto"><img src="team/ruifeng-wang.jpg" alt="Ruifeng Wang" loading="lazy"></div>
+        <div class="tinfo">
+          <h3 class="tname">Ruifeng Wang</h3>
+          <p class="trole">Postdoctoral Scholar</p>
+          <p class="tfocus">Tumor immunology</p>
+          <p class="tprev">Ph.D. Immunology, Heinrich-Heine-Universität Düsseldorf</p>
+          <a class="tmail" href="mailto:ruifengw@ustc.edu.cn" aria-label="Email Ruifeng Wang"><i class="ti"></i>Email</a>
+        </div>
+      </article>
+      <article class="tcard">
+        <div class="tphoto"><img src="team/asad-khan.jpg" alt="Asad Khan" loading="lazy"></div>
+        <div class="tinfo">
+          <h3 class="tname">Asad Khan</h3>
+          <p class="trole">Postdoctoral Scholar</p>
+          <p class="tfocus">Tumor immunology &amp; genetics</p>
+          <p class="tprev">Ph.D. Genetics, USTC</p>
+          
+        </div>
+      </article>
+      </div>
+    </section>
+    <section class="tgroup">
+      <div class="ghead"><span class="gname">PhD Students</span><span class="gcount">13</span></div>
+      <div class="team-grid">
+      <article class="tcard">
+        <div class="tphoto"><img src="team/qiang-li.jpg" alt="Qiang Li" loading="lazy"></div>
+        <div class="tinfo">
+          <h3 class="tname">Qiang Li</h3>
+          <p class="trole">PhD Student</p>
+          <p class="tfocus">Tumor immunotherapy</p>
+          <p class="tprev">B.S., Anhui Medical University</p>
+          <a class="tmail" href="mailto:lq2019@mail.ustc.edu.cn" aria-label="Email Qiang Li"><i class="ti"></i>Email</a>
+        </div>
+      </article>
+      <article class="tcard">
+        <div class="tphoto"><img src="team/guojing-yao.jpg" alt="Guojing Yao" loading="lazy"></div>
+        <div class="tinfo">
+          <h3 class="tname">Guojing Yao</h3>
+          <p class="trole">PhD Student</p>
+          <p class="tfocus">Tumor immunotherapy</p>
+          <p class="tprev">B.S. Biology, Anhui Normal University</p>
+          <a class="tmail" href="mailto:ygj666@mail.ustc.edu.cn" aria-label="Email Guojing Yao"><i class="ti"></i>Email</a>
+        </div>
+      </article>
+      <article class="tcard">
+        <div class="tphoto"><img src="team/tianli-dai.jpg" alt="Tianli Dai" loading="lazy"></div>
+        <div class="tinfo">
+          <h3 class="tname">Tianli Dai</h3>
+          <p class="trole">PhD Student</p>
+          <p class="tfocus">Tumor immunology</p>
+          <p class="tprev">Northwest A&amp;F University</p>
+          <a class="tmail" href="mailto:daitl@mail.ustc.edu.cn" aria-label="Email Tianli Dai"><i class="ti"></i>Email</a>
+        </div>
+      </article>
+      <article class="tcard">
+        <div class="tphoto"><img src="team/sohail-khan.jpg" alt="Sohail Khan" loading="lazy"></div>
+        <div class="tinfo">
+          <h3 class="tname">Sohail Khan</h3>
+          <p class="trole">PhD Student</p>
+          <p class="tfocus">Immuno-oncology</p>
+          <p class="tprev">M.S. Genetics, Central South University</p>
+          <a class="tmail" href="mailto:sohail.microbio@gmail.com" aria-label="Email Sohail Khan"><i class="ti"></i>Email</a>
+        </div>
+      </article>
+      <article class="tcard">
+        <div class="tphoto"><img src="team/ahitsham-umar.jpg" alt="Ahitsham Umar" loading="lazy"></div>
+        <div class="tinfo">
+          <h3 class="tname">Ahitsham Umar</h3>
+          <p class="trole">PhD Student</p>
+          <p class="tfocus">Bioinformatics — structural biology &amp; immunology</p>
+          <p class="tprev">USTC</p>
+          <a class="tmail" href="mailto:ahitshamumar95@mail.ustc.edu.cn" aria-label="Email Ahitsham Umar"><i class="ti"></i>Email</a>
+        </div>
+      </article>
+      <article class="tcard">
+        <div class="tphoto"><img src="team/syed-saddam-hussain.jpg" alt="Syed Saddam Hussain" loading="lazy"></div>
+        <div class="tinfo">
+          <h3 class="tname">Syed Saddam Hussain</h3>
+          <p class="trole">PhD Student</p>
+          <p class="tfocus">Tumor immunology</p>
+          <p class="tprev">MBBS &amp; M.S. Spine Surgery, University of South China</p>
+          <a class="tmail" href="mailto:sshussain@mail.ustc.edu.cn" aria-label="Email Syed Saddam Hussain"><i class="ti"></i>Email</a>
+        </div>
+      </article>
+      <article class="tcard">
+        <div class="tphoto"><img src="team/peng-sun.jpg" alt="Peng Sun" loading="lazy"></div>
+        <div class="tinfo">
+          <h3 class="tname">Peng Sun</h3>
+          <p class="trole">PhD Student</p>
+          <p class="tfocus">Tumor immunology</p>
+          <p class="tprev">M.S. USTC; B.S. Shanxi University</p>
+          <a class="tmail" href="mailto:spustc@mail.ustc.edu.cn" aria-label="Email Peng Sun"><i class="ti"></i>Email</a>
+        </div>
+      </article>
+      <article class="tcard">
+        <div class="tphoto"><img src="team/mengyuan-sun.jpg" alt="Mengyuan Sun" loading="lazy"></div>
+        <div class="tinfo">
+          <h3 class="tname">Mengyuan Sun</h3>
+          <p class="trole">PhD Student</p>
+          <p class="tfocus">Tumor immunology</p>
+          <p class="tprev">Southwest University</p>
+          <a class="tmail" href="mailto:smy0328@mail.ustc.edu.cn" aria-label="Email Mengyuan Sun"><i class="ti"></i>Email</a>
+        </div>
+      </article>
+      <article class="tcard">
+        <div class="tphoto"><img src="team/fuling-li.jpg" alt="Fuling Li" loading="lazy"></div>
+        <div class="tinfo">
+          <h3 class="tname">Fuling Li</h3>
+          <p class="trole">PhD Student</p>
+          <p class="tfocus">Tumor immunology</p>
+          <p class="tprev">Zhejiang Chinese Medical University</p>
+          <a class="tmail" href="mailto:lifuling@mail.ustc.edu.cn" aria-label="Email Fuling Li"><i class="ti"></i>Email</a>
+        </div>
+      </article>
+      <article class="tcard">
+        <div class="tphoto"><img src="team/lele-hao.jpg" alt="Lele Hao" loading="lazy"></div>
+        <div class="tinfo">
+          <h3 class="tname">Lele Hao</h3>
+          <p class="trole">PhD Student</p>
+          <p class="tfocus">Tumor immunology</p>
+          <p class="tprev">Nanjing Univ. of Aeronautics and Astronautics</p>
+          <a class="tmail" href="mailto:hll455@mail.ustc.edu.cn" aria-label="Email Lele Hao"><i class="ti"></i>Email</a>
+        </div>
+      </article>
+      <article class="tcard">
+        <div class="tphoto"><img src="team/xiaonuo-han.jpg" alt="Xiaonuo Han" loading="lazy"></div>
+        <div class="tinfo">
+          <h3 class="tname">Xiaonuo Han</h3>
+          <p class="trole">PhD Student</p>
+          <p class="tfocus">Tumor immunology</p>
+          <p class="tprev">Anhui University</p>
+          <a class="tmail" href="mailto:hxn022@mail.ustc.edu.cn" aria-label="Email Xiaonuo Han"><i class="ti"></i>Email</a>
+        </div>
+      </article>
+      <article class="tcard">
+        <div class="tphoto"><img src="team/guangli-liu.jpg" alt="Guangli Liu" loading="lazy"></div>
+        <div class="tinfo">
+          <h3 class="tname">Guangli Liu</h3>
+          <p class="trole">PhD Student</p>
+          <p class="tfocus">Tumor immunology</p>
+          <p class="tprev">Northwest A&amp;F University</p>
+          <a class="tmail" href="mailto:liuguangli@mail.ustc.edu.cn" aria-label="Email Guangli Liu"><i class="ti"></i>Email</a>
+        </div>
+      </article>
+      <article class="tcard">
+        <div class="tphoto"><img src="team/sardar-muhammad-ali.jpg" alt="Sardar Muhammad Ali" loading="lazy"></div>
+        <div class="tinfo">
+          <h3 class="tname">Sardar Muhammad Ali</h3>
+          <p class="trole">PhD Student</p>
+          <p class="tfocus">Bioinformatics</p>
+          <p class="tprev">M.Sc., University of Sheffield, UK</p>
+          <a class="tmail" href="mailto:alisardar071@gmail.com" aria-label="Email Sardar Muhammad Ali"><i class="ti"></i>Email</a>
+        </div>
+      </article>
+      </div>
+    </section>
+    <section class="tgroup">
+      <div class="ghead"><span class="gname">MSc Students</span><span class="gcount">6</span></div>
+      <div class="team-grid">
+      <article class="tcard">
+        <div class="tphoto"><img src="team/zining-wang.jpg" alt="Zining Wang" loading="lazy"></div>
+        <div class="tinfo">
+          <h3 class="tname">Zining Wang</h3>
+          <p class="trole">MSc Student</p>
+          <p class="tfocus">Tumor immunology</p>
+          <p class="tprev">Zhejiang University of Technology</p>
+          <a class="tmail" href="mailto:servicewzn@mail.ustc.edu.cn" aria-label="Email Zining Wang"><i class="ti"></i>Email</a>
+        </div>
+      </article>
+      <article class="tcard">
+        <div class="tphoto"><img src="team/ya-yang.jpg" alt="Ya Yang" loading="lazy"></div>
+        <div class="tinfo">
+          <h3 class="tname">Ya Yang</h3>
+          <p class="trole">MSc Student</p>
+          <p class="tfocus">Tumor immunology</p>
+          <p class="tprev">Nanjing Normal University</p>
+          <a class="tmail" href="mailto:sa4008287@mail.ustc.edu.cn" aria-label="Email Ya Yang"><i class="ti"></i>Email</a>
+        </div>
+      </article>
+      <article class="tcard">
+        <div class="tphoto"><img src="team/ke-zhang.jpg" alt="Ke Zhang" loading="lazy"></div>
+        <div class="tinfo">
+          <h3 class="tname">Ke Zhang</h3>
+          <p class="trole">MSc Student</p>
+          <p class="tfocus">Tumor immunology</p>
+          <p class="tprev">Shaanxi Normal University</p>
+          <a class="tmail" href="mailto:zhangke919@mail.ustc.edu.cn" aria-label="Email Ke Zhang"><i class="ti"></i>Email</a>
+        </div>
+      </article>
+      <article class="tcard">
+        <div class="tphoto"><img src="team/haifeng-peng.jpg" alt="Haifeng Peng" loading="lazy"></div>
+        <div class="tinfo">
+          <h3 class="tname">Haifeng Peng</h3>
+          <p class="trole">MSc Student</p>
+          <p class="tfocus">Tumor immunology</p>
+          
+          <a class="tmail" href="mailto:penghf0909@mail.ustc.edu.cn" aria-label="Email Haifeng Peng"><i class="ti"></i>Email</a>
+        </div>
+      </article>
+      <article class="tcard">
+        <div class="tphoto"><img src="team/rui-gao.jpg" alt="Rui Gao" loading="lazy"></div>
+        <div class="tinfo">
+          <h3 class="tname">Rui Gao</h3>
+          <p class="trole">MSc Student</p>
+          <p class="tfocus">Tumor immunology</p>
+          <p class="tprev">Tianjin Normal University</p>
+          <a class="tmail" href="mailto:gao-rui@mail.ustc.edu.cn" aria-label="Email Rui Gao"><i class="ti"></i>Email</a>
+        </div>
+      </article>
+      <article class="tcard">
+        <div class="tphoto"><img src="team/shucong-zhang.jpg" alt="Shucong Zhang" loading="lazy"></div>
+        <div class="tinfo">
+          <h3 class="tname">Shucong Zhang</h3>
+          <p class="trole">MSc Student</p>
+          <p class="tfocus">Tumor immunology</p>
+          <p class="tprev">Henan University</p>
+          <a class="tmail" href="mailto:shucong@mail.ustc.edu.cn" aria-label="Email Shucong Zhang"><i class="ti"></i>Email</a>
+        </div>
+      </article>
+      </div>
+    </section>
+
+</main>
+<footer>
+  <div class="wrap">
+    <p class="fnote">Mapping the spatial logic of the human anti-cancer immune response, and turning it into next-generation immunotherapy.</p>
+    <div class="fbottom">
+      <span>© 2026 Laboratory of Immunotherapy, USTC. All rights reserved.</span>
+      <a class="back" href="index.html">chengsun.bio →</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
