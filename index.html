@@ -443,6 +443,13 @@
   .lb-close{position:absolute;top:22px;right:26px;width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,.4);background:rgba(255,255,255,.12);color:#fff;font-size:24px;line-height:1;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:background .2s ease}
   .lb-close:hover{background:rgba(255,255,255,.24)}
   @media(max-width:640px){.cover-thumb{width:140px}.cover-mini img{width:150px}}
+
+  /* ---- full-width group photo band (added) ---- */
+  .group-full{margin:0;line-height:0;position:relative;cursor:zoom-in;background:var(--ink)}
+  .group-full img{width:100%;height:auto;max-height:82vh;object-fit:cover;object-position:center 45%;display:block;transition:opacity .3s ease}
+  .group-full figcaption{line-height:1.5;text-align:center;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--slate-2);padding:18px 20px;background:var(--card)}
+  .group-full figcaption em{font-style:italic;text-transform:none;color:var(--ink)}
+  @media(max-width:640px){.group-full img{max-height:60vh}}
 </style>
 </head>
 <body>
@@ -750,6 +757,11 @@
     </div>
   </div>
 </section>
+
+<figure class="group-full reveal">
+  <img class="cover-trigger" src="lab-group-1.jpg" data-full="lab-group-1.jpg" alt="The Sun Lab team together in spring" loading="lazy">
+  <figcaption>The <em>Sun Lab</em> team · spring</figcaption>
+</figure>
 
 <!-- ============ NEWS ============ -->
 <section class="pad" id="news">
